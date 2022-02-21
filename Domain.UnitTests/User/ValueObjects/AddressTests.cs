@@ -1,4 +1,4 @@
-﻿using DDDArchitecture.Domain.User.ValueObjects;
+﻿using DDDArchitecture.Domain.UserAggregate;
 using NUnit.Framework;
 using System.Collections.Generic;
 

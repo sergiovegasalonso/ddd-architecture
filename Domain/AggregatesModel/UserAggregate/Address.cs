@@ -1,6 +1,6 @@
 ﻿using DDDArchitecture.Domain.Common;
 
-namespace DDDArchitecture.Domain.User.ValueObjects
+namespace DDDArchitecture.Domain.UserAggregate
 {
     public class Address : ValueObject
     {
