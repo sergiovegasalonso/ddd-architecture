@@ -1,4 +1,4 @@
-﻿namespace Domain.Common
+﻿namespace DDDArchitecture.Domain.Common
 {
     public abstract class ValueObject
     {
@@ -20,7 +20,7 @@
 
         protected abstract IEnumerable<object> GetEqualityComponents();
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (obj == null || obj.GetType() != GetType())
             {
@@ -38,10 +38,6 @@
                 .Select(x => x != null ? x.GetHashCode() : 0)
                 .Aggregate((x, y) => x ^ y);
         }
-
-        #endregion Basic utility methods
-
-        #region Advanced utility methods
         public static bool operator ==(ValueObject one, ValueObject two)
         {
             return one?.Equals(two) ?? false;
@@ -51,6 +47,10 @@
         {
             return !(one?.Equals(two) ?? false);
         }
+
+        #endregion Basic utility methods
+
+        #region Advanced utility methods
         #endregion Advanced utility methods
     }
 }
