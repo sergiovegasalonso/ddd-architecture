@@ -1,4 +1,4 @@
-﻿namespace DDDArchitecture.Domain.Common
+﻿namespace DDDArchitecture.Domain.SeedWork
 {
     public abstract class ValueObject
     {

@@ -1,4 +1,4 @@
-﻿using DDDArchitecture.Domain.Common;
+﻿using DDDArchitecture.Domain.SeedWork;
 
 namespace DDDArchitecture.Domain.UserAggregate
 {
